@@ -11,7 +11,7 @@
 
     if($result->num_rows>0){
         echo '<script>alert("登录成功");</script>';
-        echo '<script>location.href="../../src/html/index.html";</script>';
+        echo '<script>location.href="../../src/html/index.enter.html";</script>';
     }else{
         echo '<script>alert("登录失败");</script>';
         echo '<script>location.href="../../src/html/enter.html";</script>';

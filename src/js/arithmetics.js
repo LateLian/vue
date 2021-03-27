@@ -2,6 +2,7 @@
 $('.good_item').on('click', '.reduce_buy_number', function() {
     // console.log($(this).parent());
     let buy_number = $(this).parent().find('.buy_number').val();
+
     console.log(buy_number);
 
     let sum = parseInt(buy_number--);
@@ -21,6 +22,7 @@ $('.good_item').on('click', '.reduce_buy_number', function() {
     let p = $(this).parent().parent().parent().parent().find('.cost').text();
     let d = parseInt(buy_number * p);
     $(this).parent().parent().parent().parent().find('.amount').html(d);
+
 });
 /* js 加法 事件 */
 $(document).on('click', '.add_buy_number', function() {
@@ -48,6 +50,7 @@ $(document).on('click', '.add_buy_number', function() {
     let p = $(this).parent().parent().parent().parent().find('.cost').text();
     let d = parseInt(buy_number * p);
     $(this).parent().parent().parent().parent().find('.amount').html(d);
+
 });
 /* change事件 */
 $(document).on('change', '.buy_number', function() {

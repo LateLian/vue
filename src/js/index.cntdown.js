@@ -128,6 +128,8 @@ $('.gbg').on('click', function() {
     location.href = "../html/enter.html";
 });
 
+
+
 setInterval(() => {
     time();
 }, 1000);

@@ -88,12 +88,13 @@ $(document).on('click', '.doLogin', function() {
 
 let checkBoxItemNum = $(".strt").find("input[name='checkbox-item']").length;
 console.log(checkBoxItemNum);
+
+
 $("#circle").on('click', function() {
     let s = $(".strt").find("input[name='checkbox-item']").prop("checked", true);
     // let su = ($(this));
     let se = s.parent().parent().find('.amount');
 
-    // console.log(parseInt($(this).parent().parent().parent().children('.good_list').children('.container').children('.good_item').children('.two').children('.t_main').children('.t_sum').children('.t_le_65').children('.amount').text()));
     let sum = 0;
     $.each(se, function(index, elm) {
         sum += parseInt($(elm).text());
@@ -106,31 +107,47 @@ $("#circle").on('click', function() {
             // console.log(index);
             $('.jg').html(sum);
         })
+        $('.settlement').css('display', 'block');
+        $('.reduce_buy_number').css('display', 'none');
+        $('.add_buy_number').css('display', 'none');
     } else {
         $.each(s, function(index, elm) {
             $('.foo_sum').text(0);
             $('.jg').html(0);
         })
         $(".strt").find("input[name='checkbox-item']").prop("checked", false);
+        $('.settlement').css('display', 'none');
+        $('.reduce_buy_number').css('display', 'inline-block');
+        $('.add_buy_number').css('display', 'inline-block');
     }
 });
 let d = 0;
 let b1 = 0;
 $(".strt").on('click', "input[name='checkbox-item']", function() {
     let s = $(this).prop("checked");
+
+
     let su = parseInt($(this).parent().parent().children('.t_sum').children('.t_le_65').children('.amount').text());
-
-    // $.each(s, function(index, elm) {
-    //     console.log(index);
-    // });
-
+    let scj = $(this).parent().parent().children('.t_quantity').find('.reduce_buy_number');
+    let scz = $(this).parent().parent().children('.t_quantity').find('.add_buy_number');
+    if ($("[type=checkbox]:checked").length == 0) {
+        $('.settlement').css('display', 'none');
+    } else {
+        $('.settlement').css('display', 'block');
+    }
     if (s) {
+        scj.css('display', 'none');
+        scz.css('display', 'none');
+        // $('.reduce_buy_number').remove();
+        // $('.add_buy_number').remove('.add_buy_number');
         d = d + 1;
         $('.foo_sum').text(d);
-        console.log(d);
+        // console.log(d);
         b1 += su;
         $('.jg').html(b1);
     } else {
+        scj.css('display', 'inline-block');
+        scz.css('display', 'inline-block');
         b1 -= su;
         d = d - 1;
         $('.foo_sum').text(d);
@@ -138,33 +155,4 @@ $(".strt").on('click', "input[name='checkbox-item']", function() {
         $('.jg').html(b1);
     }
 
-    // console.log(s);
-    // if (s == true) {
-    //     $.each(s, function(index, elm) {
-    //         $('.foo_sum').text(index + 1);
-    //     });
-    // } //else if (s) {
-    // //     $.each(s, function(index, elm) {
-    // //         $('.foo_sum').text(index - 1);
-    // //     });
-    // // }
-
-    // if ($(this).prop("checked") == true) {
-    //     $("#circle").prop("checked", true);
-    //     $.each(s, function(index, elm) {
-    //         $('.foo_sum').text(index + 1);
-    //     })
-    // } else {
-    //     $("#circle").prop("checked", false);
-    //     $.each(s, function(index, elm) {
-    //         $('.foo_sum').text(index - 1);
-    //     })
-    // }
-
-
-    // if ($(".strt").find("input[name='checkbox-item']:checked").length == checkBoxItemNum) {
-    //     $("#circle").prop("checked", true);
-    // } else {
-    //     $("#circle").prop("checked", false);
-    // }
 });

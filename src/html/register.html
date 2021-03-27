@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="../css/register.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+</head>
+
+<body>
+    <div id="nav-top" class="taxian" style="background-color: white;">
+        <div class="nav-logo">
+            <img src="../img/logo1.png" alt="">
+        </div>
+        <div class="container taxian">
+            <ul class="nav-ul ">
+                <li><a href="#">联想首页</a></li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">会员</a></li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">门店</a></li>
+                <li><a href="#">品牌</a></li>
+                <li class="last-img">下载app
+                    <img src="../img/applogo.png" alt="">
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="ltr">
+                    <div class="phone">
+                        <img src="../img/phon.png" alt="">
+                        <div class="phone-lx">
+                            <img src="../img/phone-lianxiang.png" alt="">
+                            <div class="lxapp">
+                                <span>联想智选APP </span>
+                                <span>下载即享 
+                                <br>
+                                688元新人礼
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- js动作设置 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 分割线 -->
+    <div class="jq22-register-popup">
+        <div id="pg">
+            <div class="jq22-register-box">
+                <div class="jq22-register-logo">
+                    注册联想会员
+                </div>
+                <div class="jq22-register-form" id="verifyCheck">
+                    <form action="../interface/library/reg.php" method="POST">
+                        <div class="jq22-register-form-item">
+                            <input type="text" name="phone" placeholder="手机号码" class="txt01 f-r3 required" keycodes="tel" tabindex="1" data-valid="isNonEmpty||isPhone" data-error="<i class='icon-tips'></i>请输入手机号||<i class='icon-tips'></i>手机号码格式不正确" maxlength="11" id="phone">
+                            <label class="focus valid"><div class="msg" style="display:none"><i class='icon-tips'></i>您还未输入手机号</div></label>
+                            <span class="jq22-get-code btn btn-gray f-r3 f-ml5 f-size13" id="time_box" disabled style="display:none;"></span>
+                        </div>
+                        <div class="jq22-register-form-item code">
+                            <input type="text" value="" placeholder="请输入验证码（不区分大小写）" class="input-val" />
+                            <canvas id="canvas" width="100" height="43"></canvas>
+                            <span class="inp-text"></span>
+                        </div>
+                        <div class="jq22-register-form-item">
+                            <input type="password" name="password" placeholder="设置密码" id="password" maxlength="20" class="txt04 f-r3 required" tabindex="4" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:8-20||level:2" data-error="<i class='icon-tips'></i>密码太短，最少8位||<i class='icon-tips'></i>密码长度8-20位||<i class='icon-tips'></i>密码太简单，有被盗风险，建议字母+数字的组合">
+                            <label class="focus valid"></label>
+                        </div>
+                        <div class="jq22-register-form-item">
+                            <input type="password" name="password" placeholder="确认密码" maxlength="20" class="txt05 f-r3 required" tabindex="5" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:8-20||isRepeat:password" data-error="<i class='icon-tips'></i>密码太短，最少8位||<i class='icon-tips'></i>密码长度8-20位||<i class='icon-tips'></i>两次密码输入不一致"
+                                id="rePassword">
+                            <label class="focus valid"></label>
+                        </div>
+                        <div class="jq22-register-form-item">
+                            <input type="submit" id="jq22-btn-reg" class="jq22-btn-reg" placeholder="" readonly="readonly" value="注册">
+                            <div class="protocol">注册账号表示您同意<a href="#">《用户使用协议》</a>&amp;<a href="#">《隐私权条款》</a></div>
+                            <div class="br-b"></div>
+                            <div class="possess"><span class="p-left">已有账号&nbsp;<a href="#">点此登录></a></span><span class="p-right"><a href="#">企业会员注册></a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/code.js"></script>
+<!-- <script type="text/javascript">
+    $(function() {
+        $("#jq22-btn-reg").click(function() {
+            if (!verifyCheck._click()) return;
+
+
+        });
+    });
+</script> -->
+
+
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/enter.css">
+    <script src="../js/jquery.js"></script>
+    <!-- <script src="../js/code.js"></script> -->
+</head>
+
+<body>
+    <div id="nav-top" class="taxian" style="background-color: rgba(245, 245, 245, .5);">
+        <div class="nav-logo">
+            <img src="../img/logo1.png" alt="">
+        </div>
+        <div class="container taxian">
+            <ul class="nav-ul ">
+                <li><a href="#">联想首页</a></li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">会员</a></li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">门店</a></li>
+                <li><a href="#">品牌</a></li>
+                <li class="last-img">下载app
+                    <img src="../img/applogo.png" alt="">
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="ltr">
+                    <div class="phone">
+                        <img src="../img/phon.png" alt="">
+                        <div class="phone-lx">
+                            <img src="../img/phone-lianxiang.png" alt="">
+                            <div class="lxapp">
+                                <span>联想智选APP </span>
+                                <span>下载即享 
+                                <br>
+                                688元新人礼
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- js动作设置 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="denglu">
+        <div class="denglu_main">
+            <div class="container taxian">
+                <div class="login">
+                    <div class="login_hd taxian">
+                        <div class="login_switch">
+                            <p class="login_scan_tip"></p>
+                            <!-- js 动作 -->
+                            <p class="login_static_tip"></p>
+                        </div>
+                        <div class="login_tip">
+                            <div class="poptip">
+                                <div class="poptip_arrow">
+                                    <em></em>
+                                    <span></span>
+                                </div>
+                                <div class="poptip_content">
+                                    <i><img src="../img/enter-s.png" alt=""></i> 扫码登录更安全
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_static">
+                        <div class="login_title"><span id="btn-sw">联想会员登录</span>
+                            <span id="btn-show">联想会员扫码登录</span></div>
+                        <form action="../../interface/library/enter.php" class="login-content" name="addForm">
+                            <div class="login_input">
+                                <input type="text" placeholder="手机号码" name="phone">
+                            </div>
+                            <div class="login_input">
+                                <input type="password" name="password" placeholder="密码">
+                            </div>
+                            <div class="login_mains">
+                                <input type="checkbox" id="ps" checked>
+                                <label for="ps">自动登录</label>
+                            </div>
+                            <!-- <button type=""></button> -->
+                            <input type="submit" value="登录" class="sub" id="jq22-btn-reg">
+                            <!-- onclick="SendForm()" -->
+                            <div class="clearfix taxian">
+                                <a href="#">用户名密码登录</a>
+                                <a href="#">企业会员注册</a>
+                            </div>
+                        </form>
+                        <div class="cooperation">
+                            <div class="cooperation-title taxian">
+                                <span></span>
+                                <em>其他登录方式</em>
+                                <span></span>
+                            </div>
+                            <div class="cooperation_items taxian">
+                                <a href="#"><img src="../img/enter-qq.png" alt=""></a>
+                                <a href="#"><img src="../img/enter-wb.png" alt=""></a>
+                                <a href="#"><img src="../img/enter-wx.png" alt=""></a>
+                                <a href="#"><img src="../img/enter-zfb.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qrcode_info">
+                        <img src="../img/enter-erw.gif" alt="">
+                        <div class="qrcode_desc">
+                            <p>打开&nbsp;<em>微信</em>&nbsp;扫码登录</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="company_news">
+        <div class="container">
+            <p>版权所有：1998-2021 联想集团|
+                <a href="#">法律公告</a> |
+                <a href="#">隐私权政策</a>
+            </p>
+            <p>京ICP备11035381|京公网安备110108007970号|营业执照：110000410127232</p>
+        </div>
+    </div>
+</body>
+
+<script src="../js/enter.js"></script>
+
+</html>

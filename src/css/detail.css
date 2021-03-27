@@ -1,0 +1,500 @@
+@charset 'utf-8';
+#brg {
+  color: red ;
+  border: 1px solid #E1140A;
+}
+.imB {
+  border: 1px solid red !important;
+}
+.detail {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #dadada;
+}
+.detail > .nav_con {
+  font-size: 12px;
+  color: #000;
+}
+.detail > .nav_con > a:first-child:hover {
+  color: red;
+}
+.detail > .nav_con > a:last-child {
+  float: right;
+}
+.detail > .nav_con > a:last-child > div {
+  position: relative;
+  width: 99px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.detail > .nav_con > a:last-child > div > span {
+  margin-left: 36px;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+}
+.detail > .nav_con > a:last-child > div > img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 7;
+}
+.detail > .nav_con > a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+.con {
+  margin-bottom: 40px;
+}
+.con .con_left {
+  position: relative;
+  float: left;
+}
+.con .con_left > .good_action {
+  font-size: 13px;
+  margin-top: 5px;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 530px;
+}
+.con .con_left > .good_action > span {
+  color: #A5A5A5;
+  font-size: 11px;
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.con .con_left > .good_action > .div_share {
+  float: right;
+  top: 0;
+  cursor: pointer;
+}
+.con .con_left > .good_action > .div_share > a {
+  display: inline-block;
+  color: #000;
+}
+.con .con_left > .good_action > .div_share > a > span:first-child {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../img/jl.png") no-repeat;
+  background-position: -55px -42px;
+}
+.con .con_left > .good_action > .div_share > a:hover {
+  color: red;
+}
+.con .con_left > .good_action > .div_sc {
+  margin-right: 10px;
+}
+.con .con_left > .good_action > .div_sc > a > span:first-child {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/jl.png") no-repeat;
+  background-position: -39px -43px;
+}
+.con .con_left > .good_action > .div_goodsComapre {
+  margin-right: 10px;
+}
+.con .con_left > .good_action > .div_goodsComapre > a > span:first-child {
+  display: inline-block;
+  width: 18px;
+  height: 11px;
+  margin: 10px 5px 0 15px;
+  background: url("../img/pk.png") no-repeat center;
+  background-size: contain;
+}
+.con .con_right {
+  position: relative;
+  margin-top: 36px;
+  width: 642px;
+  float: right;
+  color: #000;
+}
+.con .con_right > .c_one > h1 {
+  font-size: 22px;
+  font-weight: normal;
+}
+.con .con_right > .c_one > .dec {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #A2A2A2;
+  word-break: break-all;
+}
+.con .con_right > .price-area {
+  background: #f9f9f9;
+  border: 1px solid #F0F0F0;
+}
+.con .con_right > .price-area > .price-detail-wrap {
+  position: relative;
+  height: 38px;
+  margin: 9px 0;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_w {
+  position: absolute;
+  padding-left: 15px;
+  height: 42px;
+  line-height: 42px;
+  top: -3px;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_w > .p_d_wr {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  margin-right: 35px;
+  height: 42px;
+  width: 45px;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_w > .p_d_wra {
+  display: inline-block;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_w > .p_d_wra > .p_d_sn {
+  color: #E1140A;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_w > .p_d_wra > .p_d_st {
+  font-size: 28px;
+  color: #E1140A;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_wt {
+  position: absolute;
+  right: 0;
+  height: 35px;
+  top: 2px;
+  border-left: 1px solid #E0E0E0;
+  padding: 0 22px;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_wt > .p_d_wtw {
+  font-size: 12px;
+  color: #A5A5A5;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_wt > .p_d_wtwo {
+  font-size: 12px;
+  color: #4A4A4A;
+  cursor: pointer;
+}
+.con .con_right > .price-area > .price-detail-wrap > .p_d_wt > .p_d_wtwo:hover {
+  color: red;
+}
+.con .con_right > .price-area > .active-several-container {
+  position: relative;
+  margin-top: 7px;
+}
+.con .con_right > .price-area > .active-several-container > div {
+  padding-bottom: 17px;
+}
+.con .con_right > .price-area > .active-several-container > div > div:first-child {
+  float: left;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 6px;
+  color: #434242;
+}
+.con .con_right > .price-area > .active-several-container > div > div:last-child {
+  margin-left: 98px;
+  padding-top: 5px;
+}
+.con .con_right > .price-area > .active-several-container > div > div:last-child > .con_c {
+  padding-right: 93px;
+  position: relative;
+}
+.con .con_right > .price-area > .active-several-container > div > div:last-child > .con_c > .down-gap {
+  margin-bottom: 16px;
+}
+.con .con_right > .price-area > .active-several-container > div > div:last-child > .con_c > .down-gap > em {
+  font-size: 12px;
+  color: #df3033;
+  border: 1px solid #df3033;
+  padding: 0 3px;
+  margin-right: 12px;
+  line-height: 16px;
+  display: inline-block;
+}
+.con .con_right > .price-area > .active-several-container > div > div:last-child > .con_c > .down-gap > strong {
+  font-size: 16px;
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.con .con_right > .bu_er {
+  margin: 15px 0 0 20px;
+  color: #434242;
+  font-size: 12px;
+}
+.con .con_right > .bu_er > div:first-child {
+  float: left;
+  width: 58px;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.con .con_right > .bu_er > div:last-child {
+  float: left;
+}
+.con .con_right > .bu_er > div:last-child > div {
+  display: inline-block;
+  background-color: #96cb27;
+  border-radius: 12px;
+  line-height: 22px;
+  width: 86px;
+  margin: 0 10px;
+  text-align: center;
+}
+.con .con_right > .bu_er > div:last-child > div > img {
+  width: auto;
+  height: 14px;
+  margin-right: 7px;
+  margin-left: -5px;
+  vertical-align: middle;
+}
+.con .con_right > .bu_er > div:last-child > div > a {
+  display: inline-block;
+}
+.con .con_right > .bu_er > div:last-child > div > a > span {
+  font-size: 12px;
+  color: #fff;
+  vertical-align: middle;
+}
+.con .con_right > .bu_er > div:last-child > div > a:hover span {
+  opacity: 0.9;
+}
+.con .con_right > .bu_er > div:last-child > span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.con .con_right > .specification > .guige {
+  font-size: 12px;
+  margin-bottom: -8px;
+}
+.con .con_right > .specification > .guige > .guige-li > .guige-item-title {
+  float: left;
+  line-height: 16px;
+  margin-top: 3px;
+  margin-right: 20px;
+  width: 58px;
+}
+.con .con_right > .specification > .guige > .guige-li > .guige-item-detail {
+  float: left;
+  width: 541px;
+}
+.con .con_right > .specification > .guige > .guige-li > .guige-item-detail > span {
+  display: inline-block;
+  width: 214px;
+  padding: 0 21px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #E1140A;
+  border: 1px solid #E1140A;
+}
+.con .con_right > .specification > .guige > .guige-li > .spec-big > span {
+  color: #434242;
+  border: 1px solid #DADADA;
+}
+.con .con_right > .specification > .guige > li {
+  float: left;
+}
+.con .con_right > .recommend {
+  position: relative;
+  height: 196px;
+}
+.con .con_right > .recommend > .title {
+  position: absolute;
+  left: 0;
+}
+.con .con_right > .recommend > .recommendBox {
+  position: absolute;
+  top: 0;
+  width: 524px;
+  left: 79px;
+  height: 192px;
+  background-color: #FFFFFF;
+  border: 1px solid #DADADA;
+}
+.con .con_right > .recommend > .recommendBox > .title {
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox {
+  position: absolute;
+  top: 38px;
+  height: 8px;
+  width: 508px;
+  height: 137px;
+  overflow: hidden;
+  background: none;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap {
+  width: 747px;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li {
+  position: relative;
+  float: left;
+  margin-left: 15px;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > .imgBox {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #DADADA;
+  cursor: pointer;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > .imgBox > img {
+  width: 58px;
+  height: 58px;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > .imgBox:hover {
+  border: 1px solid red;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > a {
+  display: block;
+  color: #333;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > a > .title-s {
+  margin-top: 7px;
+  font-size: 11px;
+  line-height: 17px;
+  color: #6F7170;
+  left: 0;
+  width: 68px;
+  text-align: left;
+  word-break: break-all;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > a:hover p {
+  color: red;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > .price {
+  width: 68px;
+  text-align: left;
+  height: 36px;
+  color: #6F7170;
+}
+.con .con_right > .recommend > .recommendBox > .swiperBox > .swiperItemWrap > li > .price > .save {
+  position: absolute;
+  bottom: 0;
+  color: #E1140A;
+}
+.con .con_right > .purchase > .p-title {
+  float: left;
+  width: 58px;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.con .con_right > .purchase > .p-detail {
+  position: relative;
+  float: left;
+  height: 30px;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap {
+  margin: 0;
+  background: none ;
+  border-radius: 0;
+  width: 100px;
+  border: 1px solid #DADADA;
+  line-height: 24px;
+  display: inline-block;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap > .reduce {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  line-height: 24px;
+  border-right: 1px solid #DADADA;
+  text-align: center;
+  cursor: pointer;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap > .reduce > i {
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background: url("../img/jl.png") no-repeat;
+  vertical-align: middle;
+  background-color: #333;
+  background-size: -71px -48px;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap > .add {
+  display: inline-block;
+  width: 12px;
+  line-height: 24px;
+  border-left: 1px solid #DADADA;
+  text-align: center;
+  cursor: pointer;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap > .add > i {
+  display: inline-block;
+}
+.con .con_right > .purchase > .p-detail > .add-count-wrap > .text {
+  width: 50px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.con .con_right > .p-promptly > .p-detail > .p_group {
+  background: none;
+  width: 100%;
+  margin: 0;
+}
+.con .con_right > .p-promptly > .p-detail > .p_group > .p-pay {
+  width: 130px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #E1140A;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+  border: 1px solid #E1140A;
+  cursor: pointer;
+}
+.con .con_right > .p-promptly > .p-detail > .p_group > .p-add {
+  display: inline-block;
+  width: 130px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #E1140A;
+  background-color: #FFEDED;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 10px;
+  color: #E1140A;
+}
+.con .con_right > .toAppLoad {
+  position: relative;
+  margin-left: 98px;
+  margin-top: 18px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  color: #434242;
+}
+.con .con_right > .toAppLoad > p > .toAppHover {
+  color: #3E8DDD;
+  margin: 0 3px;
+  cursor: pointer;
+  border-bottom: 1px solid #3E8DDD;
+}
+.con .con_right > .toAppLoad > p > .toAppHover > img {
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  left: 27px;
+  top: 19px;
+}
+.con .con_right > .toAppLoad > p > .toAppHover:hover img {
+  opacity: 1;
+}

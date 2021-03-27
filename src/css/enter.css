@@ -1,0 +1,237 @@
+@charset 'utf-8';
+.show {
+  display: none;
+}
+.hide {
+  display: block;
+}
+.denglu_main {
+  height: 589px;
+  background-size: cover;
+  background-image: url("../img/enter-bg.jpg");
+}
+.denglu_main .login {
+  float: right;
+  margin-top: 32px;
+  margin-right: 21px;
+  width: 410px;
+  height: 525px;
+  background-color: #fff;
+  position: relative;
+}
+.denglu_main .login > .login_hd > .login_switch {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.denglu_main .login > .login_hd > .login_switch > .login_scan_tip {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background: url("../img/enter-er.png") no-repeat 50%;
+  background-size: cover;
+  opacity: 0.8;
+}
+.denglu_main .login > .login_hd > .login_switch > .login_scan_tip:hover {
+  opacity: 1;
+}
+.denglu_main .login > .login_hd > .login_switch > .login_static_tip {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: url("../img/enter-er1.png") no-repeat 50%;
+  background-size: cover;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.denglu_main .login > .login_hd > .login_switch > .login_static_tip:hover {
+  opacity: 1;
+}
+.denglu_main .login > .login_hd > .login_tip {
+  position: absolute;
+  right: 65px;
+  top: 10px;
+  font-size: 12px;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip {
+  border: 2px solid #f3d995;
+  height: 16px;
+  line-height: 16px;
+  padding: 5px 20px 5px 15px;
+  background-color: #fefcee;
+  position: relative;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip > .poptip_arrow {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  z-index: 10;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip > .poptip_arrow > em {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: hsla(0, 0%, 100%, 0);
+  border-style: solid;
+  overflow: hidden;
+  left: 1px;
+  top: 0;
+  border-left-color: #f3d995;
+  border-width: 6px 0 6px 6px;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip > .poptip_arrow > span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: hsla(0, 0%, 100%, 0);
+  border-style: solid;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  border-left-color: #fefcee;
+  border-width: 6px 0 6px 6px;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip > .poptip_content {
+  color: #6b6964;
+  font-weight: 400;
+}
+.denglu_main .login > .login_hd > .login_tip > .poptip > .poptip_content > i > img {
+  width: 14px;
+  height: 14px;
+  vertical-align: top;
+  margin-right: 6px;
+}
+.denglu_main .login > .login_static > .login_title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #424242;
+  font-weight: 700;
+  margin: 33px 36px 36px;
+}
+.denglu_main .login > .login_static > .login_title > span:last-child {
+  display: none;
+}
+.denglu_main .login > .login_static > .login-content {
+  margin: 0 31px;
+}
+.denglu_main .login > .login_static > .login-content > .login_input {
+  width: 100%;
+  margin-bottom: 14px;
+  position: relative;
+}
+.denglu_main .login > .login_static > .login-content > .login_input > input {
+  width: 282px;
+  border: 1px solid #d6d6d6;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 14px;
+  font-size: 14px;
+  padding-right: 50px;
+}
+.denglu_main .login > .login_static > .login-content > .login_mains > input {
+  float: left;
+  margin-right: 5px;
+}
+.denglu_main .login > .login_static > .login-content > .login_mains > label {
+  display: block;
+  line-height: 14px;
+  font-size: 14px;
+  color: #000;
+  width: 90px;
+  cursor: pointer;
+}
+.denglu_main .login > .login_static > .login-content > .sub {
+  display: block;
+  height: 50px;
+  width: 348px;
+  line-height: 50px;
+  background-color: #e22319;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  border: none;
+}
+.denglu_main .login > .login_static > .login-content > .clearfix {
+  margin-top: 14px;
+}
+.denglu_main .login > .login_static > .login-content > .clearfix > a:first-child {
+  float: left;
+  color: #ef1c22;
+  font-size: 14px;
+  line-height: 14px;
+}
+.denglu_main .login > .login_static > .login-content > .clearfix > a:last-child {
+  float: right;
+  color: #757575;
+  font-size: 14px;
+  line-height: 14px;
+}
+.denglu_main .login > .login_static > .login-content > .clearfix > a:last-child:hover {
+  color: #ef1c22;
+}
+.denglu_main .login > .login_static > .cooperation {
+  position: absolute;
+  left: 26px;
+  bottom: 0;
+  width: 358px;
+  height: 90px;
+}
+.denglu_main .login > .login_static > .cooperation > .cooperation-title > span {
+  width: 137px;
+  height: 1px;
+  background-color: #a4a3a3;
+  float: left;
+  margin-top: 6px;
+}
+.denglu_main .login > .login_static > .cooperation > .cooperation-title > em {
+  font-size: 14px;
+  line-height: 14px;
+  float: left;
+}
+.denglu_main .login > .login_static > .cooperation > .cooperation_items {
+  margin-top: 15px;
+  padding: 0 60px;
+}
+.denglu_main .login > .login_static > .cooperation > .cooperation_items > a:first-child {
+  margin-left: 0;
+  width: 31px;
+  height: 31px;
+}
+.denglu_main .login > .login_static > .cooperation > .cooperation_items > a {
+  float: left;
+  margin-left: 38px;
+  width: 31px;
+  height: 31px;
+}
+.denglu_main .login > .qrcode_info {
+  display: none;
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  margin: 10px auto 22px;
+  left: 100px;
+  bottom: 175px;
+}
+.denglu_main .login > .qrcode_info > .qrcode_desc {
+  text-align: center;
+  height: 14px;
+}
+.denglu_main .login > .qrcode_info > .qrcode_desc > p > em {
+  font-weight: 600;
+}
+.company_news {
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+.company_news a {
+  display: inline-block;
+  color: #000;
+}
+.company_news > P {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 17px;
+}

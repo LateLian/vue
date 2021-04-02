@@ -110,6 +110,8 @@ $("#circle").on('click', function() {
         $('.settlement').css('display', 'block');
         $('.reduce_buy_number').css('display', 'none');
         $('.add_buy_number').css('display', 'none');
+        $('.buy_number').css({ "outline": "none" });
+        $('.buy_number').attr({ "readonly": "readonly" });
     } else {
         $.each(s, function(index, elm) {
             $('.foo_sum').text(0);
@@ -119,6 +121,7 @@ $("#circle").on('click', function() {
         $('.settlement').css('display', 'none');
         $('.reduce_buy_number').css('display', 'inline-block');
         $('.add_buy_number').css('display', 'inline-block');
+        $('.buy_number').removeAttr("readonly");
     }
 });
 let d = 0;
@@ -138,6 +141,8 @@ $(".strt").on('click', "input[name='checkbox-item']", function() {
     if (s) {
         scj.css('display', 'none');
         scz.css('display', 'none');
+        $('.buy_number').css({ "outline": "none" });
+        $('.buy_number').attr({ "readonly": "readonly" });
         // $('.reduce_buy_number').remove();
         // $('.add_buy_number').remove('.add_buy_number');
         d = d + 1;
@@ -148,6 +153,7 @@ $(".strt").on('click', "input[name='checkbox-item']", function() {
     } else {
         scj.css('display', 'inline-block');
         scz.css('display', 'inline-block');
+        $('.buy_number').removeAttr("readonly");
         b1 -= su;
         d = d - 1;
         $('.foo_sum').text(d);

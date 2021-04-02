@@ -55,10 +55,15 @@ $(document).on('click', '.add_buy_number', function() {
 /* change事件 */
 $(document).on('change', '.buy_number', function() {
     let sum = $(this).val();
+    let p = $(this).parent().parent().parent().parent().find('.cost').text();
+
     if (sum >= 10) {
         alert("您最多只能买十件");
         sum = 10;
-        return $(this).val(sum);
+        let d = parseInt(sum * p);
+        $(this).val(sum);
+
+        return $(this).parent().parent().parent().parent().find('.amount').html(d);
     };
 
 });
